@@ -1,25 +1,29 @@
 const express = require('express')
 
 const server = express()
+const requisitionCounter = 0
+const projects = []
 
-/*
-- Query Params = ?teste=1
-- Route Params = /users/1
-- Request Body = { "name": "Guilherme Beidaki Peres", "email": "guibperes@gmail.com" }
-*/
+server.use(express.json())
 
-server.get('/teste', (req, res) => {
-  // const name = req.query.name
-  const { name } = req.query
-
-  res.json({ name })
+server.get('/projects', (req, res) => {
+  res.json({ message: 'Not implemented' })
 })
 
-server.get('/users/:id', (req, res) => {
-  // const id = req.params.id
-  const { id } = req.params
+server.post('/projects', (req, res) => {
+  res.json({ message: 'Not implemented' })
+})
 
-  res.json({ id })
+server.put('/projects/:id', (req, res) => {
+  res.json({ message: 'Not implemented' })
+})
+
+server.delete('/projects/:id', (req, res) => {
+  res.json({ message: 'Not implemented' })
+})
+
+server.post('/projects/:id/tasks', (req, res) => {
+  res.json({ message: 'Not implemented' })
 })
 
 server.listen(3000, console.log('Server is running on port 3000'))
