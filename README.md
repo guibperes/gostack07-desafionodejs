@@ -2,7 +2,7 @@
 
 Crie um aplicação do zero utilizando Express.
 
-Essa aplicaçõa será utilizada para armazenar projetos e suas tarefas.
+Essa aplicação será utilizada para armazenar projetos e suas tarefas.
 
 ## Rotas
 
